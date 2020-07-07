@@ -1,0 +1,33 @@
+{{#partial "content"}}
+
+    <div class="jumbotron">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <h4>HERO SQUAD</h4>
+            <img src="/images/heroeslogo.jpeg" width="50" height="50" alt="Heroes logo">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/index">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/heroes/new">Create A Hero</a>
+                    <a class="nav-item nav-link" href="/squads/new">Create A Squad</a>
+                    <a class="nav-item nav-link" href="/heroes">View all heroes</a>
+                    <a class="nav-item nav-link" href="/squads">View All squads</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <h1>Create your Squad</h1>
+
+    <form action="/squads/new" method="post">
+        <label for="squadName">Enter your squads name</label>
+        <input class="form-control form-control-lg" id="squadName" name="squadName" type="text"><br>
+        <label for="course">Enter your squads coursee</label>
+        <input class="form-control form-control-lg" id="course" name="course" type="text"><br>
+        <label for="heroName">Enter name of hero you want to add</label>
+        <input class="form-control form-control-lg" id="heroName" name="heroName" type="text"><br>
+        <button type="submit" class="btn btn-outline-secondary">Create Squad</button>
+    </form>
+
+{{/partial}}
+
+{{> layout.hbs}}

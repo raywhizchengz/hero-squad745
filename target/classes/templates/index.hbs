@@ -1,0 +1,46 @@
+{{#partial "content"}}
+
+    <div class="jumbotron">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <img src="/images/heroeslogo.jpeg" width="80" height="80" alt="Heroes logo">
+            <h3>HERO SQUAD</h3>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/index">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/heroes/new">CREATE A HERO</a>
+                    <a class="nav-item nav-link" href="/squads/new">CREATE A SQUAD</a>
+                    <a class="nav-item nav-link" href="/heroes">VIEW ALL HEROES</a>
+                    <a class="nav-item nav-link" href="/squads">VIEW ALL SQUADS</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <h1>hello {{userName}}, welcome to hero squad</h1>
+
+    <div id="about">
+        <h3>About Hero squad</h3>
+        <p>
+            Hero squad is an app which you can create your hero squad, and also create your heros and<br>
+            add heros to your squad.
+        </p>
+        <p>Here are some favoite heroes:</p>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="/images/hero1.jpeg" height="300" alt="Heroes logo">
+            </div>
+            <div class="col-md-3">
+                <img src="/images/hero2.jpeg" height="300" alt="Heroes logo">
+            </div>
+            <div class="col-md-3">
+                <img src="/images/hero3.jpeg" height="300" alt="Heroes logo">
+            </div>
+            <div class="col-md-3">
+                <img src="/images/hero4.jpeg" height="300" alt="Heroes logo">
+            </div>
+        </div>
+    </div>
+
+{{/partial}}
+
+{{> layout.hbs}}

@@ -1,0 +1,35 @@
+{{#partial "content"}}
+
+    <div class="jumbotron">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <h4>HERO SQUAD</h4>
+            <img src="/images/heroeslogo.jpeg" width="50" height="50" alt="Heroes logo">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/index">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/heroes/new">Create A Hero</a>
+                    <a class="nav-item nav-link" href="/squads/new">Create A Squad</a>
+                    <a class="nav-item nav-link" href="/heroes">View all heroes</a>
+                    <a class="nav-item nav-link" href="/squads">View All squads</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <h1>Create your Hero</h1>
+
+    <form action="/heroes/new" method="post">
+        <label for="name">Enter your heroes name</label>
+        <input class="form-control form-control-lg" id="name" name="name" type="text" class="form-control" required><br>
+        <label for="age">Enter your heroes age</label>
+        <input class="form-control form-control-lg" id="age" name="age" type="text" class="form-control" required><br>
+        <label for="superPower">Enter your heroes ability</label>
+        <input class="form-control form-control-lg" id="superPower" name="superPower" type="text" class="form-control" required><br>
+        <label for="weakness">Enter your heroes weakness</label>
+        <input class="form-control form-control-lg" id="weakness" name="weakness" type="text" class="form-control" required><br>
+        <button type="submit" class="btn btn-outline-secondary">Create Hero</button>
+    </form>
+
+{{/partial}}
+
+{{> layout.hbs}}

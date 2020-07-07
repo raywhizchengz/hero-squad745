@@ -1,0 +1,17 @@
+{{#partial "content"}}
+
+    <div id="welcome">
+    <h1>Sign-up with your name</h1>
+
+    <div class="login-box">
+    <form action="/welcome" method="post" id="welcomeForm">
+        <label for="userName">Enter your name</label>
+        <input class="form-control" id="userName" name="userName" type="text" class="form-control" required><br>
+        <button id="welcomeSubmit" type="submit" class="btn btn-outline-secondary">Submit</button>
+    </form>
+    </div>
+    </div>
+
+{{/partial}}
+
+{{> layout.hbs}}

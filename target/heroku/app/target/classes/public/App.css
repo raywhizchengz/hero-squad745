@@ -1,0 +1,76 @@
+body{
+    background-image: url(images/allbg.jpeg);
+    background-size: cover;
+}
+
+h1{
+    color: white;
+}
+
+#welcome{
+    text-align: center;
+    color: white;
+    background-image: url(images/welcomebg1.jpeg);
+    background-size: cover;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    padding: 10%;
+}
+
+welcomeForm{
+    width: 80%;
+}
+
+#welcomeSubmit{
+    background: none;
+    outline: white;
+    color: white;
+}
+
+#welcomeSubmit:hover{
+    color: black;
+    background: white;
+}
+
+.jumbotron{
+    color: black;
+}
+.navbar-nav{
+    padding-top: 7px;
+}
+.navbar-nav a{
+    padding-right: 10px;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.navbar-nav a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+label{
+    color: white;
+}
+
+.card{
+    color: black;
+    background-color: white;
+    width: 50%;
+    font-size: 30px;
+}
+
+.card ul li{
+    list-style: none;
+    font-size: 26px;
+}
+
+#heroTitle{
+    text-decoration: underline;
+    color: blue;
+}
+
+#about{
+    color: white;
+    font-size: 20px;
+}
